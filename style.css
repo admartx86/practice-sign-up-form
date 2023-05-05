@@ -1,0 +1,24 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+}
+
+.hero {
+  flex: 1;
+  background-color: #f1f1f1;
+}
+
+.sign-up {
+  flex: 2;
+  background-color: #a111ee;
+}
