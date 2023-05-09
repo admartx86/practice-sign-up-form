@@ -14,6 +14,19 @@
         </div>
         <div class="sign-up">
             Testing: this is the right container
+            <form action="https://httpbin.org/post" method="post">
+                <label for="user-first-name">First Name</label>
+                <input id="user-first-name" type="text" name="user-first name" placeholder="Enter your first name" required>
+                <label for="user-last-name">Last Name</label>
+                <input id="user-last-name" type="text" name="user-last-name" placeholder="Enter your last name" required>
+                <label for="user-email">Email Address</label>
+                <input id="user-email" type="email" name="user-email" placeholder="example@mail.com" required>
+                <label for="user-password">Password</label>
+                <input id="user-password" type="password" name="user-password" required>
+                <label for="user-confirm-password">Confirm Password</label>
+                <input id="user-confirm-password" type="password" name="user-conforim-password" required>
+                <button id="user-submit-form" type="submit" name="user-submit-form">Create Account</button> 
+            </form>
         </div>
     </div>
 </body> 
