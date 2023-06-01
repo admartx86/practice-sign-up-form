@@ -3,22 +3,80 @@ html, body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
-.main {
+a:link {
+  color: #FFFFFF;
+}
+
+a:visited{
+  color: #FFFFFF;
+}
+
+@font-face {
+  font-family: "Norse Bold";
+  src: url("./Norse-Bold.otf");
+}
+
+main {
   display: flex;
-  flex-direction: row;
   height: 100vh;
   width: 100vw;
 }
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   flex: 1;
-  background-color: #f1f1f1;
+  background-color: #000000;
+  background-image: url("background-image.png");
+  background-size: cover;
+  color: #ffffff;
+}
+
+.hero > div:nth-child(1) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  height: 200px;
+  width: auto;
+  margin-top: 200px;
+}
+
+.hero > div:nth-child(1) img {
+  transform: scale(30%);
+}
+
+.hero > div:nth-child(1) p {
+  font-size: 124px;
+  font-family: "Norse Bold";
+  justify-self: flex-start;
+  align-self: center;
+  transform: translateX(-80%);
+}
+
+.hero > div:nth-child(2) {
+  align-items: end;
+}
+
+.hero > div:nth-child(2) p {
+  display: flex;
+  justify-content: center;
 }
 
 .sign-up {
   flex: 2;
-  background-color: #a111ee;
+}
+
+.sign-up > div:nth-child(1) {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+form p {
+  font-size: 24px;
 }
